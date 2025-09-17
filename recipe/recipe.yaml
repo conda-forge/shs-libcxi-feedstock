@@ -12,9 +12,12 @@ source:
     patches:
       - fix-random.patch
       - fix-udp-header.patch
+      - fix-fuse3-configure.patch
+      - fix-fuse3-stats.patch
+      - fix-fuse3-rh.patch
 
 build:
-  number: 0
+  number: 1
   script: build.sh
   skip:
     - win
@@ -33,7 +36,7 @@ requirements:
     - pkg-config
   host:
     - libconfig
-    - libfuse <3.0
+    - libfuse >=3
     - libnl
     - libnuma
     - libsystemd0
