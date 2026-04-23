@@ -1,6 +1,6 @@
 context:
   name: "shs-libcxi"
-  version: "13.0.0"
+  version: "14.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://github.com/HewlettPackard/shs-libcxi/archive/refs/tags/release/shs-${{ version }}.tar.gz
-    sha256: 48c11617352f48262400f3722e0f8a701c6bceb74701c39a9ea20e83ca690fe3
+    sha256: fa5fe09e0ef5731930796d818f2449d368d50b8029991ed9038fb7ec4c3df00a
     patches:
       - fix-random.patch
       - fix-udp-header.patch
@@ -17,7 +17,7 @@ source:
       - fix-fuse3-rh.patch
 
 build:
-  number: 1
+  number: 0
   script: build.sh
   skip:
     - win
