@@ -1,0 +1,5 @@
+--- a/utils/dgchs_i2c.c
++++ b/utils/dgchs_i2c.c
+@@ -230,7 +230,7 @@
+-        if (num_msg > I2C_RDWR_IOCTL_MAX_MSGS)
++        if (num_msg > I2C_RDRW_IOCTL_MAX_MSGS)
