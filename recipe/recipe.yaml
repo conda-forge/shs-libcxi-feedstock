@@ -16,6 +16,7 @@ source:
       - fix-fuse3-configure.patch
       - fix-fuse3-stats.patch
       - fix-fuse3-rh.patch
+      - fix-i2c-ioctl.patch
 
 build:
   number: 0
