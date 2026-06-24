@@ -1,6 +1,6 @@
 context:
   name: "shs-libcxi"
-  version: "13.0.0"
+  version: "14.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,8 @@ package:
 
 source:
   - url: https://github.com/HewlettPackard/shs-libcxi/archive/refs/tags/release/shs-${{ version }}.tar.gz
-    sha256: 48c11617352f48262400f3722e0f8a701c6bceb74701c39a9ea20e83ca690fe3
+#   sha256: 7f47b7982aa3e68c092e74d432aac98d841f9982fb8e777e0599d9ccfafb3e76  # 14.0.1
+    sha256: fa5fe09e0ef5731930796d818f2449d368d50b8029991ed9038fb7ec4c3df00a  # 14.0.0
     patches:
       - fix-random.patch
       - fix-udp-header.patch
@@ -42,8 +43,8 @@ requirements:
     - libsystemd0
     - libuv
     - lm-sensors
-    - shs-cassini-headers
-    - shs-cxi-drivers
+    - shs-cassini-headers >= 14.0.0
+    - shs-cxi-drivers >= 14.0.0
     - yaml
 
 tests:
