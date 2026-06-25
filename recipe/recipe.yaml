@@ -19,7 +19,7 @@ source:
       - fix-i2c-ioctl.patch
 
 build:
-  number: 0
+  number: 1
   script: build.sh
   skip:
     - win
@@ -44,8 +44,8 @@ requirements:
     - libsystemd0
     - libuv
     - lm-sensors
-    - shs-cassini-headers >=14.0.0
-    - shs-cxi-drivers >=14.0.0
+    - shs-cassini-headers >=14.0.1
+    - shs-cxi-drivers >=14.0.1
     - yaml
 
 tests:
